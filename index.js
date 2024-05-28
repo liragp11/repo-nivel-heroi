@@ -10,12 +10,12 @@ let listaNiveis = [
     ["Platina", 7001, 8000],
     ["Ascendente", 8001, 9000],
     ["Imortal", 9001, 10000],
-    ["Radiante", 10001, Infinity]  // Corrigido para abranger todos os valores acima de 10001
+    ["Radiante", 10001, Infinity]
 ];
 
 for (let i = 0; i < listaNiveis.length; i++) {  // Condição de loop corrigida
     if (xpHeroi >= listaNiveis[i][1] && xpHeroi <= listaNiveis[i][2]) {
         console.log(msgSaida + listaNiveis[i][0]);
-        break;  // Adicionado para parar o loop após encontrar o nível correto
+        break;
     }
 }
